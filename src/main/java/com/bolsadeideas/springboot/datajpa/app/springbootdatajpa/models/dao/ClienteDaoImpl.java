@@ -20,7 +20,7 @@ public class ClienteDaoImpl implements IClienteDao{
     @Transactional(readOnly = true)
     @Override
     public List<Cliente> findAll() {
-        return em.createQuery("from Cliente").getResultList();
+        return em.createQuery("FROM Cliente").getResultList();
     }
     
 }
