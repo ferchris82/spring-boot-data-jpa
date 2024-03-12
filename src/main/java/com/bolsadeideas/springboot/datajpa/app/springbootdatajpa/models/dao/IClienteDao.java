@@ -7,4 +7,6 @@ import com.bolsadeideas.springboot.datajpa.app.springbootdatajpa.models.entity.C
 public interface IClienteDao {
     
     public List<Cliente> findAll();
+
+    public void save(Cliente cliente);
 }
